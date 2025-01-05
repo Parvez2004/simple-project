@@ -4,35 +4,39 @@
 }
 
 body{
-    background: linear-gradient( 135deg, #2e2e2e, #000000);
+    background: linear-gradient(135deg, #2e2e2e, #000000);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
     color: aliceblue;
     text-align: center;
-
 }
+
 #head{
     margin: 50px 200px;
 }
+
 .cri{
     height: 500px;
     width: 500px;
     border: white 8px solid;
     box-shadow: 8px 8px 7px seagreen;
 }
+
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
     margin-bottom: 30px;
 }
+
 .jj{
     font-size: 22px;
     font-weight: bolder;
     text-align: center;
     margin-bottom: 30px;
 }
+
 .contain{
     font-size: 20px;
     background-color: wheat;
@@ -41,10 +45,8 @@ h1{
     padding: 30px;
     margin-top: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* display: none;*/
-    /* display: inline */
-    /* display: inline-block; */
 }
+
 button{
     padding: 30px 60px;
     font-size: 20px;
@@ -54,22 +56,23 @@ button{
     border-radius: 10px;
     cursor: pointer;
 }
+
 .picnic{
     margin: 50px;
     font-size: larger;
     color: tomato;
-    
 }
+
 .picnic p{
-    margin-bottom:50px ;
+    margin-bottom: 50px;
 }
+
 .img{
     padding: auto;
     height: auto;
     width: 100%;
-   
-
 }
+
 .img img{
     height: 100%;
     width: 100%;
@@ -77,6 +80,72 @@ button{
     box-shadow: 20px 20px 10px grey;
     margin-bottom: 50px;
 }
+
 video{
-   
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #head {
+        margin: 20px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .jj {
+        font-size: 18px;
+    }
+
+    .contain {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .picnic {
+        margin: 30px;
+        font-size: medium;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .cri {
+        width: 100%;
+        height: auto;
+        border: 5px solid white;
+        box-shadow: 5px 5px 5px seagreen;
+    }
+
+    button {
+        padding: 20px 40px;
+        font-size: 16px;
+    }
+}
+
+/* Further adjustments for smaller screens (mobile) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .jj {
+        font-size: 16px;
+    }
+
+    .contain {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
 }
